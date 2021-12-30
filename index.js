@@ -4,7 +4,7 @@ const server = net.createServer((socket) => {
   socket.on('data', (data) => {
     console.log('String', data.toString());
     console.log('JSON', data.toJSON());
-    socket.write('1');
+    socket.write('00000001');
   });
 });
 
